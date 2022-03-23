@@ -1,0 +1,127 @@
+$primary-color: hsl(25, 97%, 53%);
+$white-color: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(213, 17%, 20%);
+$dark-blue: hsl(212, 21%, 16%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	max-width: 100%;
+	background-color: $very-dark-blue;
+	color: $white-color;
+	font-family: 'Overpass', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 1rem 2rem;
+}
+
+// --------
+// COMPONENT CONTAINER
+// --------
+
+.box-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 1.5rem;
+	width: 100%;
+	padding: 2.5rem 2rem;
+	background-color: $dark-blue;
+	border: none;
+	border-radius: 1.5rem;
+	.star-circle {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $medium-grey;
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.box-title {
+		font-size: 2.4rem;
+		color: $white-color;
+		font-weight: normal;
+	}
+
+	.box-text {
+		font-size: 1.5rem;
+		color: $light-grey;
+	}
+}
+
+// --------
+// RATING FORM
+// --------
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	width: 100%;
+	gap: 2.5rem;
+	.rating-box {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		// overflow: hidden;?
+		.rating-input {
+			display: none;
+		}
+
+		.rating-label {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			padding-top: 3px;
+			border-radius: 50%;
+			border: none;
+			background-color: $medium-grey;
+			font-size: 1.5rem;
+			color: $light-grey;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s;
+		}
+
+		.rating-input:checked + .rating-label {
+			background-color: $light-grey;
+			color: $white-color;
+		}
+
+		.rating-input:hover + .rating-label {
+			background-color: $primary-color;
+			color: $white-color;
+		}
+	}
+}

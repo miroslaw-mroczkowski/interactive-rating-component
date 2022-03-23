@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
@@ -18,9 +18,50 @@
 
 <body>
 
-  <!-- Rating state start -->
+  <section class="wrapper">
 
-  <!-- How did we do?
+    <div class="box-container">
+
+      <div class="star-circle">
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+            fill="#FC7614" />
+        </svg>
+      </div>
+
+      <h2 class="box-title">How did we do?</h2>
+      <p class="box-text">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+      <form action="#">
+        <div class="rating-box">
+          <input type="radio" class="rating-input" id="rate1" name="rating" value="1">
+          <label for="rate1" class="rating-label">1</label>
+
+          <input type="radio" class="rating-input" id="rate2" name="rating" value="2">
+          <label for="rate2" class="rating-label">2</label>
+
+          <input type="radio" class="rating-input" id="rate3" name="rating" value="3">
+          <label for="rate3" class="rating-label">3</label>
+
+          <input type="radio" class="rating-input" id="rate4" name="rating" value="4">
+          <label for="rate4" class="rating-label">4</label>
+
+          <input type="radio" class="rating-input" id="rate5" name="rating" value="5">
+          <label for="rate5" class="rating-label">5</label>
+        </div>
+        <button class="submit-btn" type="submit">submit</button>
+      </form>
+
+
+
+    </div>
+
+
+    <!-- Rating state start -->
+
+    <!-- How did we do?
 
   Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!
@@ -29,25 +70,26 @@
 
   Submit -->
 
-  <!-- Rating state end -->
+    <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+    <!-- Thank you state start -->
 
-  <!-- You selected Add rating here out of 5 -->
+    <!-- You selected Add rating here out of 5 -->
 
-  <!-- Thank you!
+    <!-- Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch! -->
 
-  <!-- Thank you state end -->
+    <!-- Thank you state end -->
 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
-      target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Mirosław Mroczkowski</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Mirosław Mroczkowski</a>.
+    </div>
+  </section>
 </body>
 
 </html>
