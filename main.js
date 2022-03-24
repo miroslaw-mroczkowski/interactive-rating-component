@@ -4,6 +4,7 @@ const modalBox = document.querySelector('.modal-rating-score')
 const ratingContainer = document.querySelector('.rating-container')
 const scoreParagraph = document.createElement('p')
 const modalContainer = document.querySelector('.modal-container')
+const errorMsg = document.querySelector('.error-message')
 let scoreValue = ''
 
 const score = () => {
@@ -17,8 +18,7 @@ const score = () => {
 const addScore = e => {
 	e.preventDefault()
 	if (scoreValue === '') {
-		alert('Choose your score!')
-		return
+		errorMsg.classList.add('active')
 	} else {
 		scoreParagraph.textContent = `You selected ${scoreValue} out of ${ratingScore.length}`
 		scoreParagraph.classList.add('modal-score-text')

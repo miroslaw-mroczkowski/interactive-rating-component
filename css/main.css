@@ -192,6 +192,21 @@ form .rating-box .rating-input:checked + .rating-label {
   color: white;
 }
 
+.error-message {
+  display: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fb7413;
+  -webkit-transition: display 0.3s;
+  transition: display 0.3s;
+}
+
+.active {
+  display: block;
+}
+
 .modal-container {
   display: none;
   -webkit-box-orient: vertical;
