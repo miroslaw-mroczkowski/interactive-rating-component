@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Interactive Rating Component](https://github.com/miroslaw-mroczkowski/interactive-rating-component)
-- Live Site URL: [Interactive Rating Component]([https://miroslaw-mroczkowski.github.io/interactive-rating-component/)
+- Live Site URL: [Interactive Rating Component](https://miroslaw-mroczkowski.github.io/interactive-rating-component/)
 
 ## My process
 
